@@ -1,5 +1,9 @@
-package com.geekBrains.marchenkods.first.hw.operands;
+package com.geekBrains.marchenkods.constants;
 
+/**
+ * @author danil on 04.03.2021.
+ * @project PostfixCalc
+ */
 public enum Priority {
     ZERO(0),
     FIRST(1),

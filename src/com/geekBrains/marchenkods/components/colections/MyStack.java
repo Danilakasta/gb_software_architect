@@ -1,9 +1,9 @@
-package com.geekBrains.marchenkods.first.hw;
+package com.geekBrains.marchenkods.components.colections;
 
 import java.util.EmptyStackException;
 import java.util.Vector;
 
-class MyStack<E> extends Vector<E> {
+public class MyStack<E> extends Vector<E> {
 
     public MyStack() {
     }

@@ -1,6 +1,12 @@
-package com.geekBrains.marchenkods.first.hw.operands;
+package com.geekBrains.marchenkods.components.operands;
 
-public abstract class Operand implements ICalculate{
+import com.geekBrains.marchenkods.constants.Priority;
+
+/**
+ * @author danil on 04.03.2021.
+ * @project PostfixCalc
+ */
+public abstract class Operand implements IActions{
     private String name;
     private String operand;
     private Priority priority;
