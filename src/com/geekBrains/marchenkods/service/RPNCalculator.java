@@ -1,9 +1,11 @@
 package com.geekBrains.marchenkods.service;
 
-import com.geekBrains.marchenkods.components.colections.MyStack;
 import com.geekBrains.marchenkods.components.helpers.DoubleHelper;
 import com.geekBrains.marchenkods.components.holders.OperandHolder;
 import com.geekBrains.marchenkods.constants.Priority;
+
+import java.util.Queue;
+import java.util.Stack;
 
 
 /**
@@ -29,7 +31,7 @@ public class RPNCalculator implements ICalculator {
      */
     @Override
     public void read() {
-        MyStack<Character> stack = new MyStack<>();
+        Stack<Character> stack = new Stack<>();
         int priority;
         for (int i = 0; i < expression.length(); i++) {
             priority = OperandHolder.checkPriority(expression.charAt(i));
@@ -66,7 +68,7 @@ public class RPNCalculator implements ICalculator {
     @Override
     public void calculate() {
         String operand = new String();
-        MyStack<Double> stack = new MyStack<>();
+        Stack<Double> stack = new Stack<>();
 
         for (int i = 0; i < RPNExpression.length(); i++) {
             if (RPNExpression.charAt(i) == ' ') continue;
